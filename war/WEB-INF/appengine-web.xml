@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+	<application>sebookmanager</application>
+	<version>7</version>
+	
+	
+	<!-- Configure system properties -->
+	<system-properties>
+		<property name="java.util.logging.config.file" value="WEB-INF/logging.properties" />
+		<property name="google.id" value="(type id here.  ex&gt; admin@se.kaist.ac.kr )" />
+		<property name="google.pw" value="(type password here.)" ></property>
+	</system-properties>
+
+</appengine-web-app>

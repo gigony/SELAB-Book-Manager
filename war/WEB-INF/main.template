@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head> 
+    <meta http-equiv='content-type' content='text/html; charset=UTF-8'>     
+    <title>SE Book Manager </title>
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all" />
+</head>
+<body>
+	<script>
+		function checkClosed(){
+    		if(popup.closed){
+        		window.location.reload();
+    		}
+    		else{
+       			window.setTimeout(checkClosed,500);
+    		}}  
+		function onborrow(){			
+			borrowBook(document.getElementById('booknum').value);
+		}
+		function borrowBook(bookNum)
+		{
+			var address='/borrow?'+'booknum='+bookNum;
+			popup=window.open(address,'popup', 'width=300, height=200,left=0,top=0,toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, scrollbars=yes, copyhistory=no, modal=yes');		
+			window.setTimeout(checkClosed,500);
+		}
+		function onreturn(){			
+			returnBook(document.getElementById('booknum').value);
+ 		}
+ 		function returnBook(bookNum)
+ 		{
+ 			var address='/return?'+'booknum='+bookNum;
+ 			popup=window.open(address,'popup', 'width=300, height=200,left=0,top=0,toolbar=no, location=no, directories=no, status=no, menubar=no, resizable=yes, scrollbars=yes, copyhistory=no, modal=yes');		
+ 			window.setTimeout(checkClosed,500);
+ 		}
+ 		
+	</script>	
+	<!-- <div class='my-box'>
+		<b>Please enter the book number: </b> <input id='booknum' value='' type='text' size='3' maxlength='3'/>
+		<input id='loanbtn' type='button' name='borrowbtn' value='Borrow' onclick='javascript:onborrow()'/>	
+		<input id='returnbtn' type='button' name='borrowbtn' value='Return' onclick='javascript:onreturn()'/>
+	</div>
+	-->
+	 
+	<div class='my-box'>
+		<h1> SE Lab Books </h1></br>		
+		<a href='https://spreadsheets.google.com/a/se.kaist.ac.kr/lv?key=ttRHdk6wziK4H-gC_ISC-UA&type=view&gid=0&f=true&sortcolid=20&sortasc=true&rowsperpage=1000' target='_blank'>Admin</a>
+		LOGINOUT_AREA		 
+	</div>
+	
+	DATA_TABLE_AREA
+
+	<!-- <iframe name=papermain src='https://spreadsheets.google.com/a/se.kaist.ac.kr/lv?key=ttRHdk6wziK4H-gC_ISC-UA&type=view&gid=0&f=true&sortcolid=20&sortasc=true&rowsperpage=1000' frameBorder=0 width='100%' scrolling=yes height='700'/> -->
+		  
+</body>
+</html>
