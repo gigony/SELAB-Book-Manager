@@ -46,7 +46,7 @@ public class BookReturnServlet extends HttpServlet {
 	resp.setCharacterEncoding("UTF-8");
 	OutputStreamWriter htmlWriter = new OutputStreamWriter(resp.getOutputStream(), "UTF-8");
 
-	//iframe문제 해결
+	// To solve iframe-related problem
 	resp.setHeader("P3P", "CP='CAO PSA CONi OTR OUR DEM ONL'");
 	htmlWriter.write("<html>" + "<head>" + "  <meta http-equiv='content-type' content='text/html; charset=UTF-8'>"
 	        + "  <title>Return Result</title>" + "</head>" + "<body>");

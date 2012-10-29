@@ -7,12 +7,12 @@ I configured my lab's email infrastructure by using Google Apps on 2010,
 and people in my lab are using email/calendar service based on Google Apps until now.
 
 There were so many public books in my lab and they were not managed well.
-To make people easy to use books, I developed a kind of book rental system on top of Google Application Engine (GAE)
+To make it easier for the people to use the books, I developed a kind of book rental system on top of Google Application Engine (GAE)
 and connected with my lab's Google Apps.
 
 People who need to borrow books require to connect a book rental page by using their ID of Google Apps and 
 check available books, then click `borrow` button after getting books physically. 
-Student who was chosen as a book master will be notified about borrowing and returnning of books, through email.
+Student who was chosen as a book master will be notified about borrowing and returning of books, through email.
 
 Everyone was happy with this project.
 

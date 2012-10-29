@@ -28,9 +28,6 @@ import com.google.gdata.util.ServiceException;
 @SuppressWarnings("serial")
 public class MainServlet extends HttpServlet {
     public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-
-	//StringBuilder test = new StringBuilder("aaa하하하");
-
 	/*
 	 * resp.setContentType("text/html; charset=UTF-8");
 	 * resp.setCharacterEncoding("UTF-8");
@@ -42,9 +39,9 @@ public class MainServlet extends HttpServlet {
 	 */
 	//http://aspnetresources.com/blog/frames_webforms_and_rejected_cookies
 	//http://www.okjsp.pe.kr/seq/31134
-	//iframe문제 해결
+	// To solve iframe-related problem
 	resp.setHeader("P3P", "CP='IDC DSP COR ADM DEVi TAIi PSA PSD IVAi IVDi CONi HIS OUR IND CNT'");
-	//한글문제
+	//Korean problem
 	//http://mcpaint.tistory.com/88
 
 	resp.setContentType("text/html; charset=UTF-8");
