@@ -57,7 +57,7 @@ This sheet also has information about \# of books and \# of names
 `Name + Email address`
 
 
-Each sheet has unique address for accessing information from the sheet such as: 
+Each sheet has a unique address for accessing information from the sheet such as: 
   * BookList - http://spreadsheets.google.com/feeds/cells/ttRHdk6wziK4H-gC_ISC-UA/od6/private/full
   * History - http://spreadsheets.google.com/feeds/cells/ttRHdk6wziK4H-gC_ISC-UA/od7/private/full
   * Name - http://spreadsheets.google.com/feeds/cells/ttRHdk6wziK4H-gC_ISC-UA/od4/private/full
