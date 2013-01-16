@@ -62,7 +62,7 @@ Each sheet has unique address for accessing information from the sheet such as:
   * History - http://spreadsheets.google.com/feeds/cells/ttRHdk6wziK4H-gC_ISC-UA/od7/private/full
   * Name - http://spreadsheets.google.com/feeds/cells/ttRHdk6wziK4H-gC_ISC-UA/od4/private/full
 
-    (You can not access those address because those are private sheets)
+    (You can not access those addresses because those are private sheets)
 
 Change above addresses in code to use this project for your own project.
 
