@@ -1,4 +1,4 @@
-AITetris is made available under the MIT license:
+SELAB Book Manager is made available under the MIT license:
 
  Copyright © 2010-2012 Gigon Bae, http://gigony.tistory.com
 

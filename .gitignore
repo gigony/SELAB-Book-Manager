@@ -1,6 +1,6 @@
+war/WEB-INF/SEBookManager.p12
+war/WEB-INF/classes
 *.class
-
 # Package Files #
-*.jar
 *.war
 *.ear

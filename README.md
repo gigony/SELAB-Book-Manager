@@ -66,10 +66,8 @@ Each sheet has a unique address for accessing information from the sheet such as
 
 Change above addresses in code to use this project for your own project.
 
-And change `appengine-web.xml` to include account information for accessing document links.
 
-[![Configuration](https://github.com/gigony/SELAB-Book-Manager/raw/master/Screenshots/Configuration_th.png)](https://github.com/gigony/SELAB-Book-Manager/raw/master/Screenshots/Configuration.png)
-
+And add 'SEBookManager.p12' certificate file to `WEB-INF/` folder after creating a service account in Google Developers Console.
 
 
 License

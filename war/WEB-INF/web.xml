@@ -1,43 +1,41 @@
 <?xml version="1.0" encoding="utf-8"?>
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xmlns="http://java.sun.com/xml/ns/javaee"
-xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
-xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
-http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" version="2.5">
+	xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	version="2.5">
+
 	<servlet>
 		<servlet-name>BookLoan</servlet-name>
-		<servlet-class>se.appengine.book.BookLoanServlet</servlet-class>
+		<servlet-class>se.kaist.ac.kr.bookmanager.BookLoanServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>BookLoan</servlet-name>
 		<url-pattern>/borrow</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>BookReturn</servlet-name>
-		<servlet-class>se.appengine.book.BookReturnServlet</servlet-class>
+		<servlet-class>se.kaist.ac.kr.bookmanager.BookReturnServlet</servlet-class>
 	</servlet>
 	<servlet-mapping>
 		<servlet-name>BookReturn</servlet-name>
 		<url-pattern>/return</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>Main</servlet-name>
-		<servlet-class>se.appengine.book.MainServlet</servlet-class>
-	</servlet>		
+		<servlet-class>se.kaist.ac.kr.bookmanager.MainServlet</servlet-class>
+	</servlet>
 	<servlet-mapping>
 		<servlet-name>Main</servlet-name>
 		<url-pattern>/main</url-pattern>
 	</servlet-mapping>
-	
-	<resource-files> 
-    	<include path="WEB-INF/**.template" /> 
-    </resource-files>
-    
-    
-    	
-	
+
+	<resource-files>
+		<include path="WEB-INF/**.template" />
+	</resource-files>
+
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
